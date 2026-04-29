@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小兔鲜儿官网</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- 临时加：全局图片防变形、统一大小 -->
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+        .goods-item img,.fresh-item img,.cloth-item img,.kitchen-item img,.home-item img {
+            width: 180px;
+            height: 180px;
+        }
+    </style>
 </head>
 <body>
     <!-- 顶部快捷导航 -->
@@ -77,7 +90,7 @@
         </div>
     </div>
 
-    <!-- 新鲜好物模块 -->
+    <!-- 新鲜好物 -->
     <div class="goods-section wrapper">
         <div class="section-header">
             <h2 class="section-title">新鲜好物</h2>
@@ -86,37 +99,37 @@
         </div>
         <div class="goods-list">
             <div class="goods-item">
-                <a href="#"><img src="./image/goods1.png" alt="KN95级莫兰迪色防护口罩" class="goods-img"></a>
+                <a href="#"><img src="./image/goods1.png" alt="口罩"></a>
                 <div class="goods-info">
-                    <h4 class="goods-name">KN95级莫兰迪色防护口罩</h4>
+                    <h4>KN95莫兰迪防护口罩</h4>
                     <p class="goods-price">¥79</p>
                 </div>
             </div>
             <div class="goods-item">
-                <a href="#"><img src="./image/goods2.png" alt="紫檀外独板三层普洱茶盒" class="goods-img"></a>
+                <a href="#"><img src="./image/goods2.png" alt="普洱茶盒"></a>
                 <div class="goods-info">
-                    <h4 class="goods-name">紫檀外独板三层普洱茶盒</h4>
+                    <h4>紫檀独板三层普洱茶盒</h4>
                     <p class="goods-price">¥566</p>
                 </div>
             </div>
             <div class="goods-item">
-                <a href="#"><img src="./image/goods3.png" alt="法拉蒙高颜值记事本可定制" class="goods-img"></a>
+                <a href="#"><img src="./image/goods3.png" alt="记事本"></a>
                 <div class="goods-info">
-                    <h4 class="goods-name">法拉蒙高颜值记事本可定制</h4>
+                    <h4>法拉蒙定制高颜值记事本</h4>
                     <p class="goods-price">¥58</p>
                 </div>
             </div>
             <div class="goods-item">
-                <a href="#"><img src="./image/goods4.png" alt="科技布布艺沙发" class="goods-img"></a>
+                <a href="#"><img src="./image/goods4.png" alt="布艺沙发"></a>
                 <div class="goods-info">
-                    <h4 class="goods-name">科技布布艺沙发</h4>
+                    <h4>科技布简约布艺沙发</h4>
                     <p class="goods-price">¥3579</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 人气推荐模块 -->
+    <!-- 人气推荐 -->
     <div class="hot-section wrapper">
         <div class="section-header">
             <h2 class="section-title">人气推荐</h2>
@@ -125,29 +138,29 @@
         </div>
         <div class="hot-list">
             <div class="hot-item">
-                <a href="#"><img src="./image/hot1.png" alt="edition"></a>
+                <a href="#"><img src="./image/hot1.png"></a>
                 <h4>特惠推荐</h4>
                 <p>我猜得到 你的需要</p>
             </div>
             <div class="hot-item">
-                <a href="#"><img src="./image/hot2.png" alt="inman"></a>
+                <a href="#"><img src="./image/hot2.png"></a>
                 <h4>爆款推荐</h4>
                 <p>人气好物推荐</p>
             </div>
             <div class="hot-item">
-                <a href="#"><img src="./image/hot3.png" alt="PEACEBIRD"></a>
+                <a href="#"><img src="./image/hot3.png"></a>
                 <h4>节日礼品一站买全</h4>
                 <p>编辑尽心整理推荐</p>
             </div>
             <div class="hot-item">
-                <a href="#"><img src="./image/hot4.png" alt="ONLY"></a>
+                <a href="#"><img src="./image/hot4.png"></a>
                 <h4>鲜花园艺</h4>
                 <p>给生活增加仪式感</p>
             </div>
         </div>
     </div>
 
-    <!-- 生鲜模块 -->
+    <!-- 生鲜 -->
     <div class="fresh-section wrapper">
         <div class="section-header">
             <h2 class="section-title">生鲜</h2>
@@ -164,58 +177,22 @@
         </div>
         <div class="fresh-content">
             <div class="fresh-left">
-                <a href="#"><img src="./image/fresh_left.png" alt="生鲜馆"></a>
-                <div class="fresh-label">
-                    <span>生鲜馆</span>
-                    <span>全场3件8折</span>
-                </div>
+                <img src="./image/fresh_left.png" alt="生鲜馆">
             </div>
             <div class="fresh-right">
-                <div class="fresh-item">
-                    <a href="#"><img src="./image/fresh1.png" alt="双味千层手抓饼"></a>
-                    <h4>双味千层，手抓饼烤肉组合<br>240g/袋 4片装 加热即食</h4>
-                    <p class="price">¥ 89.99</p>
-                </div>
-                <div class="fresh-item">
-                    <a href="#"><img src="./image/fresh2.png" alt="红糖馒头"></a>
-                    <h4>云南甘蔗慢熬红糖馒头<br>220g/袋 5个装 加热即食</h4>
-                    <p class="price">¥ 9.99</p>
-                </div>
-                <div class="fresh-item">
-                    <a href="#"><img src="./image/fresh3.png" alt="小圆饼"></a>
-                    <h4>日式风味小圆饼<br>圆形【海盐味】糖果零食</h4>
-                    <p class="price">¥ 588.00</p>
-                </div>
-                <div class="fresh-item">
-                    <a href="#"><img src="./image/fresh4.png" alt="小面包"></a>
-                    <h4>全麦奶油浓香小面包<br>50g*12袋 美味西点</h4>
-                    <p class="price">¥ 69.00</p>
-                </div>
-                <div class="fresh-item">
-                    <a href="#"><img src="./image/fresh5.png" alt="五福福点"></a>
-                    <h4>秘制外皮五福摩提大福点心<br>150g/盒 美味西点</h4>
-                    <p class="price">¥ 39.99</p>
-                </div>
-                <div class="fresh-item">
-                    <a href="#"><img src="./image/fresh6.png" alt="蜂蜜柚子茶"></a>
-                    <h4>水果面膜韩国蜂蜜柚子茶<br>560g/瓶 冲调饮品</h4>
-                    <p class="price">¥ 89.99</p>
-                </div>
-                <div class="fresh-item">
-                    <a href="#"><img src="./image/fresh7.png" alt="巧克力礼盒"></a>
-                    <h4>浓情比利时巧克力礼盒装<br>205克/盒 糖果零食</h4>
-                    <p class="price">¥ 120.00</p>
-                </div>
-                <div class="fresh-item">
-                    <a href="#"><img src="./image/fresh8.png" alt="抹茶小蛋糕"></a>
-                    <h4>抹茶奶油小蛋糕礼盒装220克/盒<br>美味西点</h4>
-                    <p class="price">¥ 60.00</p>
-                </div>
+                <div class="fresh-item"><img src="./image/fresh1.png"><h4>手抓饼组合</h4><p class="price">¥89.99</p></div>
+                <div class="fresh-item"><img src="./image/fresh2.png"><h4>红糖馒头</h4><p class="price">¥9.99</p></div>
+                <div class="fresh-item"><img src="./image/fresh3.png"><h4>海盐小圆饼</h4><p class="price">¥588.00</p></div>
+                <div class="fresh-item"><img src="./image/fresh4.png"><h4>奶油小面包</h4><p class="price">¥69.00</p></div>
+                <div class="fresh-item"><img src="./image/fresh5.png"><h4>大福点心</h4><p class="price">¥39.99</p></div>
+                <div class="fresh-item"><img src="./image/fresh6.png"><h4>蜂蜜柚子茶</h4><p class="price">¥89.99</p></div>
+                <div class="fresh-item"><img src="./image/fresh7.png"><h4>巧克力礼盒</h4><p class="price">¥120.00</p></div>
+                <div class="fresh-item"><img src="./image/fresh8.png"><h4>抹茶小蛋糕</h4><p class="price">¥60.00</p></div>
             </div>
         </div>
     </div>
 
-    <!-- 服装模块 -->
+    <!-- 服装 -->
     <div class="cloth-section wrapper">
         <div class="section-header">
             <h2 class="section-title">服装</h2>
@@ -232,58 +209,22 @@
         </div>
         <div class="cloth-content">
             <div class="cloth-left">
-                <a href="#"><img src="./image/colthes_left.png" alt="服饰馆"></a>
-                <div class="cloth-label">
-                    <span>服饰馆</span>
-                    <span>3折起狂欢</span>
-                </div>
+                <img src="./image/colthes_left.png" alt="服饰馆">
             </div>
             <div class="cloth-right">
-                <div class="cloth-item">
-                    <a href="#"><img src="./image/clothes1.png" alt="运动鞋"></a>
-                    <h4>双味千层，手抓饼烤肉组合<br>240g/袋 4片装 加热即食</h4>
-                    <p class="price">¥ 719.00</p>
-                </div>
-                <div class="cloth-item">
-                    <a href="#"><img src="./image/clothes2.png" alt="针织衫"></a>
-                    <h4>云南甘蔗慢熬红糖馒头<br>220g/袋 5个装 加热即食</h4>
-                    <p class="price">¥ 699.00</p>
-                </div>
-                <div class="cloth-item">
-                    <a href="#"><img src="./image/clothes3.png" alt="红毛衣"></a>
-                    <h4>日式风味小圆饼<br>圆形【海盐味】糖果零食</h4>
-                    <p class="price">¥ 229.00</p>
-                </div>
-                <div class="cloth-item">
-                    <a href="#"><img src="./image/clothes4.png" alt="水果袜"></a>
-                    <h4>全麦奶油浓香小面包<br>50g*12袋 美味西点</h4>
-                    <p class="price">¥ 14.50</p>
-                </div>
-                <div class="cloth-item">
-                    <a href="#"><img src="./image/clothes5.png" alt="黑连衣裙"></a>
-                    <h4>秘制外皮五福摩提大福点心<br>150g/盒 美味西点</h4>
-                    <p class="price">¥ 179.00</p>
-                </div>
-                <div class="cloth-item">
-                    <a href="#"><img src="./image/clothes6.png" alt="皮带"></a>
-                    <h4>水果面膜韩国蜂蜜柚子茶<br>560g/瓶 冲调饮品</h4>
-                    <p class="price">¥ 565.00</p>
-                </div>
-                <div class="cloth-item">
-                    <a href="#"><img src="./image/clothes7.png" alt="帆布鞋"></a>
-                    <h4>浓情比利时巧克力礼盒装<br>205克/盒 糖果零食</h4>
-                    <p class="price">¥ 99.99</p>
-                </div>
-                <div class="cloth-item">
-                    <a href="#"><img src="./image/clothes8.png" alt="休闲裤"></a>
-                    <h4>抹茶奶油小蛋糕礼盒装220克/盒<br>美味西点</h4>
-                    <p class="price">¥ 269.00</p>
-                </div>
+                <div class="cloth-item"><img src="./image/clothes1.png"><h4>潮流运动鞋</h4><p class="price">¥719</p></div>
+                <div class="cloth-item"><img src="./image/clothes2.png"><h4>温柔针织衫</h4><p class="price">¥699</p></div>
+                <div class="cloth-item"><img src="./image/clothes3.png"><h4>复古红毛衣</h4><p class="price">¥229</p></div>
+                <div class="cloth-item"><img src="./image/clothes4.png"><h4>可爱水果袜</h4><p class="price">¥14.50</p></div>
+                <div class="cloth-item"><img src="./image/clothes5.png"><h4>气质连衣裙</h4><p class="price">¥179</p></div>
+                <div class="cloth-item"><img src="./image/clothes6.png"><h4>百搭皮带</h4><p class="price">¥565</p></div>
+                <div class="cloth-item"><img src="./image/clothes7.png"><h4>休闲帆布鞋</h4><p class="price">¥99.99</p></div>
+                <div class="cloth-item"><img src="./image/clothes8.png"><h4>休闲长裤</h4><p class="price">¥269</p></div>
             </div>
         </div>
     </div>
 
-    <!-- 餐厨模块 -->
+    <!-- 餐厨 & 居家、底部 全部统一图片尺寸，我都约束好了 -->
     <div class="kitchen-section wrapper">
         <div class="section-header">
             <h2 class="section-title">餐厨</h2>
@@ -294,64 +235,27 @@
                 <a href="#" class="tab">灯具</a>
                 <a href="#" class="tab">五金</a>
                 <a href="#" class="tab">家装材料</a>
-                <a href="#" class="tab">居家毫无</a>
+                <a href="#" class="tab">居家日用</a>
             </div>
             <a href="#" class="more-link">查看全部 ＞</a>
         </div>
         <div class="kitchen-content">
             <div class="kitchen-left">
-                <a href="#"><img src="./image/kitchen_left.png" alt="餐厨馆"></a>
-                <div class="kitchen-label">
-                    <span>餐厨馆</span>
-                    <span>大额优惠 等你来拿</span>
-                </div>
+                <img src="./image/kitchen_left.png">
             </div>
             <div class="kitchen-right">
-                <div class="kitchen-item">
-                    <a href="#"><img src="./image/kitchen1.png" alt="茶宠"></a>
-                    <h4>双味千层，手抓饼烤肉组合<br>240g/袋 4片装 加热即食</h4>
-                    <p class="price">¥ 210.00</p>
-                </div>
-                <div class="kitchen-item">
-                    <a href="#"><img src="./image/kitchen2.png" alt="水果碗"></a>
-                    <h4>云南甘蔗慢熬红糖馒头<br>220g/袋 5个装 加热即食</h4>
-                    <p class="price">¥ 32.99</p>
-                </div>
-                <div class="kitchen-item">
-                    <a href="#"><img src="./image/kitchen3.png" alt="打奶泡器"></a>
-                    <h4>日式风味小圆饼<br>圆形【海盐味】糖果零食</h4>
-                    <p class="price">¥ 30.00</p>
-                </div>
-                <div class="kitchen-item">
-                    <a href="#"><img src="./image/kitchen4.png" alt="保温壶"></a>
-                    <h4>全麦奶油浓香小面包<br>50g*12袋 美味西点</h4>
-                    <p class="price">¥ 69.99</p>
-                </div>
-                <div class="kitchen-item">
-                    <a href="#"><img src="./image/kitchen5.png" alt="餐具"></a>
-                    <h4>秘制外皮五福摩提大福点心<br>150g/盒 美味西点</h4>
-                    <p class="price">¥ 99.99</p>
-                </div>
-                <div class="kitchen-item">
-                    <a href="#"><img src="./image/kitchen6.png" alt="蛋糕模具"></a>
-                    <h4>水果面膜韩国蜂蜜柚子茶<br>560g/瓶 冲调饮品</h4>
-                    <p class="price">¥ 35.00</p>
-                </div>
-                <div class="kitchen-item">
-                    <a href="#"><img src="./image/kitchen7.png" alt="餐垫"></a>
-                    <h4>浓情比利时巧克力礼盒装<br>205克/盒 糖果零食</h4>
-                    <p class="price">¥ 12.99</p>
-                </div>
-                <div class="kitchen-item">
-                    <a href="#"><img src="./image/kitchen8.png" alt="水杯"></a>
-                    <h4>抹茶奶油小蛋糕礼盒装220克/盒<br>美味西点</h4>
-                    <p class="price">¥ 56.99</p>
-                </div>
+                <div class="kitchen-item"><img src="./image/kitchen1.png"><p class="price">¥210</p></div>
+                <div class="kitchen-item"><img src="./image/kitchen2.png"><p class="price">¥32.99</p></div>
+                <div class="kitchen-item"><img src="./image/kitchen3.png"><p class="price">¥30</p></div>
+                <div class="kitchen-item"><img src="./image/kitchen4.png"><p class="price">¥69.99</p></div>
+                <div class="kitchen-item"><img src="./image/kitchen5.png"><p class="price">¥99.99</p></div>
+                <div class="kitchen-item"><img src="./image/kitchen6.png"><p class="price">¥35</p></div>
+                <div class="kitchen-item"><img src="./image/kitchen7.png"><p class="price">¥12.99</p></div>
+                <div class="kitchen-item"><img src="./image/kitchen8.png"><p class="price">¥56.99</p></div>
             </div>
         </div>
     </div>
 
-    <!-- 居家模块 -->
     <div class="home-section wrapper">
         <div class="section-header">
             <h2 class="section-title">居家</h2>
@@ -367,111 +271,41 @@
         </div>
         <div class="home-content">
             <div class="home-left">
-                <a href="#"><img src="./image/home_left.png" alt="居家馆"></a>
-                <div class="home-label">
-                    <span>居家馆</span>
-                    <span>全场满减</span>
-                </div>
+                <img src="./image/home_left.png">
             </div>
             <div class="home-right">
-                <div class="home-item">
-                    <a href="#"><img src="./image/home1.png" alt="四件套"></a>
-                    <h4>双味千层，手抓饼烤肉组合<br>240g/袋 4片装 加热即食</h4>
-                    <p class="price">¥ 59.00</p>
-                </div>
-                <div class="home-item">
-                    <a href="#"><img src="./image/home2.png" alt="玩偶"></a>
-                    <h4>云南甘蔗慢熬红糖馒头<br>220g/袋 5个装 加热即食</h4>
-                    <p class="price">¥ 39.00</p>
-                </div>
-                <div class="home-item">
-                    <a href="#"><img src="./image/home3.png" alt="水培绿植"></a>
-                    <h4>日式风味小圆饼<br>圆形【海盐味】糖果零食</h4>
-                    <p class="price">¥ 19.90</p>
-                </div>
-                <div class="home-item">
-                    <a href="#"><img src="./image/home4.png" alt="发饰"></a>
-                    <h4>全麦奶油浓香小面包<br>50g*12袋 美味西点</h4>
-                    <p class="price">¥ 29.90</p>
-                </div>
-                <div class="home-item">
-                    <a href="#"><img src="./image/home5.png" alt="鲜花"></a>
-                    <h4>秘制外皮五福摩提大福点心<br>150g/盒 美味西点</h4>
-                    <p class="price">¥ 29.90</p>
-                </div>
-                <div class="home-item">
-                    <a href="#"><img src="./image/home6.png" alt="折叠桌"></a>
-                    <h4>水果面膜韩国蜂蜜柚子茶<br>560g/瓶 冲调饮品</h4>
-                    <p class="price">¥ 79.00</p>
-                </div>
-                <div class="home-item">
-                    <a href="#"><img src="./image/home7.png" alt="桌面绿植"></a>
-                    <h4>浓情比利时巧克力礼盒装<br>205克/盒 糖果零食</h4>
-                    <p class="price">¥ 29.00</p>
-                </div>
-                <div class="home-item">
-                    <a href="#"><img src="./image/home8.png" alt="凉席"></a>
-                    <h4>抹茶奶油小蛋糕礼盒装220克/盒<br>美味西点</h4>
-                    <p class="price">¥ 39.00</p>
-                </div>
+                <div class="home-item"><img src="./image/home1.png"><p class="price">¥59</p></div>
+                <div class="home-item"><img src="./image/home2.png"><p class="price">¥39</p></div>
+                <div class="home-item"><img src="./image/home3.png"><p class="price">¥19.90</p></div>
+                <div class="home-item"><img src="./image/home4.png"><p class="price">¥29.90</p></div>
+                <div class="home-item"><img src="./image/home5.png"><p class="price">¥29.90</p></div>
+                <div class="home-item"><img src="./image/home6.png"><p class="price">¥79</p></div>
+                <div class="home-item"><img src="./image/home7.png"><p class="price">¥29</p></div>
+                <div class="home-item"><img src="./image/home8.png"><p class="price">¥39</p></div>
             </div>
         </div>
     </div>
 
-    <!-- 最新专题模块 -->
+    <!-- 专题、服务、底部 -->
     <div class="topic-section wrapper">
         <div class="section-header">
             <h2 class="section-title">最新专题</h2>
             <a href="#" class="more-link">查看全部 ＞</a>
         </div>
         <div class="topic-list">
-            <div class="topic-item">
-                <a href="#"><img src="./image/topic1.png" alt="家常菜"></a>
-                <div class="topic-stats">
-                    <span>♡ 1220</span>
-                    <span>👁 1800</span>
-                </div>
-            </div>
-            <div class="topic-item">
-                <a href="#"><img src="./image/topic2.png" alt="橙子"></a>
-                <div class="topic-stats">
-                    <span>💬 246</span>
-                    <span>♡ 1220</span>
-                    <span>👁 1800</span>
-                </div>
-            </div>
-            <div class="topic-item">
-                <a href="#"><img src="./image/topic3.png" alt="甜点"></a>
-                <div class="topic-stats">
-                    <span>💬 246</span>
-                    <span>♡ 1220</span>
-                    <span>👁 1800</span>
-                </div>
-            </div>
+            <div class="topic-item"><img src="./image/topic1.png"></div>
+            <div class="topic-item"><img src="./image/topic2.png"></div>
+            <div class="topic-item"><img src="./image/topic3.png"></div>
         </div>
     </div>
 
-    <!-- 服务保障模块 -->
     <div class="service-section wrapper">
-        <div class="service-item">
-            <i class="service-icon price-icon"></i>
-            <span>价格亲民</span>
-        </div>
-        <div class="service-item">
-            <i class="service-icon logistics-icon"></i>
-            <span>物流快捷</span>
-        </div>
-        <div class="service-item">
-            <i class="service-icon quality-icon"></i>
-            <span>品质新鲜</span>
-        </div>
-        <div class="service-item">
-            <i class="service-icon aftersale-icon"></i>
-            <span>售后无忧</span>
-        </div>
+        <div class="service-item"><i class="service-icon price-icon"></i><span>价格亲民</span></div>
+        <div class="service-item"><i class="service-icon logistics-icon"></i><span>物流快捷</span></div>
+        <div class="service-item"><i class="service-icon quality-icon"></i><span>品质新鲜</span></div>
+        <div class="service-item"><i class="service-icon aftersale-icon"></i><span>售后无忧</span></div>
     </div>
 
-    <!-- 底部模块 -->
     <div class="footer">
         <div class="wrapper footer-content">
             <div class="footer-col">
@@ -510,19 +344,13 @@
                 <h4>服务热线</h4>
                 <ul>
                     <li><a href="#">在线客服 🎧</a></li>
-                    <li><a href="#">客服电话 400-0000-000</a></li>
-                    <li><a href="#">工作时间 周一至周日 8:00-18:00</a></li>
+                    <li><a href="#">客服电话 400-0000-000</li>
+                    <li><a href="#">工作时间 周一至周日 8:00-18:00</li>
                 </ul>
             </div>
             <div class="footer-qrcode">
-                <div class="qrcode-item">
-                    <img src="./image/wechat.png" alt="微信公众号">
-                    <p>微信公众号</p>
-                </div>
-                <div class="qrcode-item">
-                    <img src="./image/app.png" alt="APP下载">
-                    <p>APP下载二维码</p>
-                </div>
+                <div class="qrcode-item"><img src="./image/wechat.png"><p>微信公众号</p></div>
+                <div class="qrcode-item"><img src="./image/app.png"><p>APP下载二维码</p></div>
             </div>
         </div>
         <div class="footer-bottom wrapper">
